@@ -1,6 +1,6 @@
 package JavaInterviewQuestions;
 
-import org.omg.CosNaming._BindingIteratorImplBase;
+//import org.omg.CosNaming._BindingIteratorImplBase;
 
 public class Java_20_ReverseNumber {
 

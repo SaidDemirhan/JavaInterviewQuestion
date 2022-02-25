@@ -1,5 +1,7 @@
 package JavaInterviewQuestions;
 
+import java.util.Scanner;
+
 public class Java_02_AddTwoIntegers {
 
 	public static void main(String[] args) {
