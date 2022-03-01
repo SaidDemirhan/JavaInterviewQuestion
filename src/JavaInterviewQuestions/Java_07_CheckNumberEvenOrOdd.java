@@ -20,6 +20,17 @@ public class Java_07_CheckNumberEvenOrOdd {
 		else {
 			System.out.println(num+ " is odd");
 		}
+
+		//=========================================//
+
+		System.out.println("Lütfen bir sayi girimiz:");
+
+		int sayi=reader.nextInt();
+
+		if (sayi%2==0){
+			System.out.println("Sayi ikiye tam bölünmektedir");
+		}else
+		System.out.println("Girilen deger 2'ye bölünemedi");
 	}
 
 }

@@ -1,5 +1,7 @@
 package JavaInterviewQuestions;
 
+import java.util.Scanner;
+
 public class Java_08_AlphabetVowelOrConsonant {
 
 	public static void main(String[] args) {
@@ -30,6 +32,18 @@ public class Java_08_AlphabetVowelOrConsonant {
 			System.out.println(ch + " is consonant");
 			break;
 		}
+
+		//===================================================//
+
+		Scanner scanner=new Scanner(System.in);
+
+		System.out.println("Lütfen bir harf giriniz:");
+
+		char harf= scanner.next().charAt(0);
+
+		if (harf == 'a'|| harf='e' || harf='i'|| harf=='o' || harf=='u'){
+			System.out.println("Girilen rakam ünlü harftir.");
+		}else {System.out.println("Girilen harf ünlü harftir.");
 
 	}
 
