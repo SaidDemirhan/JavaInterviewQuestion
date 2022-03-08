@@ -1,5 +1,7 @@
 package JavaInterviewQuestions;
 
+import java.util.Scanner;
+
 public class Java_09_LargestAmongThreeNumbers {
 
 	public static void main(String[] args) {
@@ -45,7 +47,26 @@ public class Java_09_LargestAmongThreeNumbers {
 		}else {
 			System.out.println("z is smallest");
 		}
-		
+		//======================================================//
+
+		Scanner scanner=new Scanner(System.in);
+
+		System.out.println("Lütfen 3 sayi girerek enter tusuna basiniz:");
+
+		int sayi1= scanner.nextInt();
+		int sayi2= scanner.nextInt();
+		int sayi3= scanner.nextInt();
+
+		if (sayi1>sayi2&&sayi1>sayi3){
+			System.out.println("En büyük girilen deger "+sayi1);
+		} else if (sayi2>sayi1&&sayi2>sayi3){
+			System.out.println("En büyük girilen deger "+sayi2);
+		}else if (sayi3>sayi1&&sayi3>sayi2){
+			System.out.println("En büyük girilen deger "+sayi3);
+		}else if (sayi1==sayi2||sayi1==sayi3||sayi2==sayi3){
+			System.out.println("uygun olmayan degerler var");
+		}else System.out.println("Hata aliyoruz...");
+
 
 	}
 
