@@ -63,10 +63,9 @@ public class Java_09_LargestAmongThreeNumbers {
 			System.out.println("En büyük girilen deger "+sayi2);
 		}else if (sayi3>sayi1&&sayi3>sayi2){
 			System.out.println("En büyük girilen deger "+sayi3);
-		}else if (sayi1==sayi2||sayi1==sayi3||sayi2==sayi3){
-			System.out.println("uygun olmayan degerler var");
-		}else System.out.println("Hata aliyoruz...");
-
+		}else {
+			System.out.println("uygun olmayan degerler var!");
+		}
 
 	}
 

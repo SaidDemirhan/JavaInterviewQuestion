@@ -1,5 +1,7 @@
 package JavaInterviewQuestions;
 
+import java.util.Scanner;
+
 public class Java_11_LeapYear {
 
 	public static void main(String[] args) {
@@ -29,6 +31,31 @@ public class Java_11_LeapYear {
 		}
 		else {
 			System.out.println(year + " is not a leap year");
+		}
+
+		//===================================================//
+
+		Scanner scanner=new Scanner(System.in);
+		System.out.println("Lütfen bir yil giriniz: ");
+
+		int yil=scanner.nextInt();
+		boolean artikYil=false;
+
+		if (yil%4==0) {
+			if (yil%100==0){
+				if (yil % 400 == 0) {
+					artikYil = true;
+				} else
+					artikYil = false;
+			}else
+				artikYil=true;
+		}else
+			artikYil=false;
+
+		if (artikYil==true) {
+			System.out.println("Girilen " + yil + " yili artik yildir.");
+		}else {
+			System.out.println("Girilen "+ yil+" yili artik yil DEGILDIR.");
 		}
 
 	}
